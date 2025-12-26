@@ -1,14 +1,13 @@
-#input is used to take user's inf and print is used to display output on the screen.
+#input is used to take input from user and print is used to display output on the screen.
 
 name = input("Enter your name: ")
 print("Hello,", name)
 
-#Note that the input function is only used for strings. To use it with integers, you must convert
+#Note that the input function is only used for strings. To use it with integers, you must do some conversion.
 #like that int(input("Enter a number:"))
 
 age = 22
 print("Age:", age)
-#The comma here is used to help display multiples items on the same line
 print("Apply", "Mango", "Avocado")
 
 name = "Aicha"
