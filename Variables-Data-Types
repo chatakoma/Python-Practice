@@ -1,0 +1,53 @@
+#Welcome to Python Learning
+print("Hello, Aicha! Welcome to python")
+print("Line01")
+print("Line02")
+print("Line03")
+
+#Variables
+name = "Aicha"
+age = 22
+gpa = 3.8
+is_student = True
+
+# Excercise01
+name01= "Chata"
+age01= 20
+f_color = "blue"
+
+
+#Method01 concatination
+print("My name is " + name01 + ". I am " + str(age01) + " And my favorite color is " + f_color + ".")
+
+
+#Methode02 concatination
+# f-string concatination can be used for both strings and integers. + is only used for strings
+Introduction = f" My name is {name} and I am {age}"
+print (Introduction)
+print(f"My name is {name01}")
+
+
+#Methode03 Concatination
+#f methode is also another easiest way of concatinating in python
+print("My name is {} amd I am {}.".format(name,age))
+
+
+#Exercise02
+print("{} is learning Python!".format(name))
+print("She is doing a great job!")
+
+
+#Exercise03
+x = 10
+y= 7
+print(x+y)
+print(x*y)
+print(x-y)
+
+
+
+
+
+
+
+
