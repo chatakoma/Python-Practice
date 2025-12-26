@@ -1,0 +1,37 @@
+#input is used to take user's inf and print is used to display output on the screen.
+
+name = input("Enter your name: ")
+print("Hello,", name)
+
+#Note that the input function is only used for strings. To use it with integers, you must convert
+#like that int(input("Enter a number:"))
+
+age = 22
+print("Age:", age)
+#The comma here is used to help display multiples items on the same line
+print("Apply", "Mango", "Avocado")
+
+name = "Aicha"
+print(f"Hello {name}, Welcome back")
+
+
+#Let's move on to Type Conversion
+age = int (input("Enter your age: "))
+print(age - 1)
+
+price = float(input("Enter price: "))
+print(price*2)
+
+
+name01 = input("Enter your name: ")
+age01 = int(input("Enter your age: "))
+height= float(input("Enter your height: "))
+
+print(f"Hello {name01}!")
+print(f"You will be {age01 + 1} next year.")
+print(f"You are {height}  m")
+
+
+
+
+
