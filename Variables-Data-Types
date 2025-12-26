@@ -16,19 +16,19 @@ age01= 20
 f_color = "blue"
 
 
-#Method01 concatination
+#Method01 concatenation
 print("My name is " + name01 + ". I am " + str(age01) + " And my favorite color is " + f_color + ".")
 
 
-#Methode02 concatination
-# f-string concatination can be used for both strings and integers. + is only used for strings
+#Methode02 concatenation
+# f-string concatenation can be used for both strings and integers. + is only used for strings
 Introduction = f" My name is {name} and I am {age}"
 print (Introduction)
 print(f"My name is {name01}")
 
 
-#Methode03 Concatination
-#f methode is also another easiest way of concatinating in python
+#Methode03 Concatenation
+#f methode is another easy way to concatenate in python
 print("My name is {} amd I am {}.".format(name,age))
 
 
