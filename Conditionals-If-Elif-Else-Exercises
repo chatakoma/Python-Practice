@@ -1,0 +1,45 @@
+#Exercise01--> Even Or Odd
+
+number = int(input("Enter a number: "))
+
+if number % 2 == 0 :
+    print("The number is even")
+else:
+    print("The number is odd")
+    
+#Exercise02 ---> Grade Checker
+
+score = float(input("Enter a score(0-100): "))
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+else:
+    print("F")
+    
+#Temperature Advice
+
+temperature = float(input("Enter today's temperature: "))
+
+if temperature < 10 :
+    print("it's cold")
+elif temperature >= 10 and temperature <= 25:    # or elif temperature <=25
+    print ("Nice weather")
+else:
+    print("it's hot")
+
+#Exercise04 : Simple Login
+
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+if username == "Aicha" and password == "python234":
+    print("Welcome Aicha!")
+else:
+    print("Try again!")
+
+
+
+
