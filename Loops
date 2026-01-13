@@ -1,0 +1,87 @@
+#Counting from 0 to 4
+for counter in range(1,5):
+    print(counter)
+print("") 
+
+#Counting from 1 to 4
+for counter in range(1,5):
+    print(counter)
+print("")  
+
+#Counting 1 to 9 , increase counter by 2
+for counter in range(1,10,2):
+    print(counter)
+print("")
+
+#Looping through a list
+foods = ["rice", "pizza", "pasta"]
+
+for food in foods:
+    print(food)
+print("")   
+
+#Looping through a string
+name = "Aicha"
+
+for char in name:
+    print(char)
+print("") 
+
+#The While Loop
+count = 1
+
+while count <=5:
+    print(count)
+    count +=1
+print("") 
+
+#Breaks
+for i in range (10):
+    if i == 5:
+        break
+    print(i)
+print("") 
+
+# Continue
+for i in range(0,11,2):
+    if i == 4:
+        continue
+    print(i)
+print("")
+
+#Nested Loops( looops inside loops)
+for x in range(3):
+    for y in range(1, 10):
+        print(y, end=" ") # the end puts number on same line 
+    print()
+
+print("") # adding 
+
+
+rows = int(input("Enter the # of rows: "))
+columns =int(input("Enter the # of columns: "))
+symbol = input("Enter a symbol to use: ")
+
+for i in range(rows):
+    for j in range(columns):
+        print(symbol, end= "")
+    print()
+print("")
+
+#Mehod01
+for i in range(4):
+    for j in range(5):
+        print(i,j)
+print("")      
+
+#Method02
+for i in range(4):
+    for j in range (5):
+        print(j, end="")
+    print()
+
+
+
+
+
+    
