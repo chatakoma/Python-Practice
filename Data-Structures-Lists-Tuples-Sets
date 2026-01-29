@@ -1,0 +1,133 @@
+#Lists =====> Lists are ordered, changeable and allow duplicates. Use indexes
+
+fruits = ["apple", "banana", "orange"]  # Here we're creating a lists
+print(fruits[0])   # accessing first item in lists(apple)
+print(fruits[-1])  #accessing last item in lists(orange)
+print("")
+
+fruits[1] = "mango" #modifying the list
+print(fruits)
+print("")
+
+fruits.append("kiwi") #adding an item to lists. Item is inserted at the end of list if append is used.
+print(fruits);
+print("")
+
+fruits.insert(1, "grape") #adding an item to a specific position in the 
+print(fruits)
+print("")
+
+fruits.remove("apple")  #removing an item from the liste
+print(fruits)
+print("")
+
+popped = fruits.pop() #removing last item. list.pop(index)==> remove and returns item at specific position
+print(popped)
+print("")
+
+for f in fruits:
+    print(f)
+print("")
+
+
+#Tuples ===> tuples are like lists but unchangeable. They are like read-only lists. They are
+#ordered, no changeable, allow duplicates and use indexes
+
+colors = ("red", "blue", "green")
+#colors[0] = "yellow"   #no allowed. Can't be changed
+print(colors[0]) #acceccing tuples
+print(colors[1])
+print(colors[2])
+print("")
+
+for c in colors:
+    print(c, end=" ")
+print("")
+
+#Sets ====>are unordered, no duplicates, mutable(can add and remove), no indexing
+#They are unique and fast
+print("")
+numbers = {1, 2, 3, 4, 5}
+print(numbers)
+print("")
+
+numbers.add(5)
+numbers.remove(1)
+print(numbers)
+print("")
+
+if 3 in numbers:   
+    print("Found!") 
+print("")
+
+#Dictionaries ==> they store data in key-value pairs
+student = {
+    "name": "Aicha",
+    "age" : 22,
+    "major": "Computer Science"
+}
+print(student)
+print("")
+
+#Let's access data in dictionary
+print(student["name"])
+print("")
+
+#adding and modifying data in dictionary
+student["gpa"] = 3.9
+student["age"] = 23
+print(student)
+print("")
+
+#Removing data in dictionary
+popped = student.pop("major")
+print(popped)
+print(student)
+print("")
+
+#Looping through a dictionary
+for key, value in student.items(): #student.items returns all key-value pairs (name, Aicha)
+    print(key, ":", value)         # key = "name", value = "Aicha"
+print("")
+
+
+#Nested Data Structures
+#This is a lists of dictionaries
+students = [
+    {"name": "Oumou", "age": 20, "major": "Computer Engineering"},
+    {"name": "John", "age": 25, "major": "Computer Science"}
+    ]
+for student in students:
+    print(student)
+print("")
+
+
+#Dictionaries containing list
+menu = {
+    
+    "drinks": ["tea", "coffee", "juice"],
+    "prices": [2,3,4]
+}
+print(menu) 
+print("")
+
+#When are quotation marks used in dictionaries
+
+example = {
+    "name": "Aicha",     #for string ===> quotes used
+    2025 : "grad year",   #for int ===> no quotes used
+    (1,2) : "coordinates"  #for tuple ===> no quotes used
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
