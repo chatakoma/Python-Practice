@@ -1,0 +1,54 @@
+#Exercise01: Lists
+#Creating a list of favorite foods
+favorite_foods = ["Attieke and fish", "Babenda", "caesar salad"]
+favorite_foods[1] = "Chicken masala"
+print(favorite_foods)
+for food in favorite_foods:
+    print(food)
+print("")
+
+
+#Exercise02: Tuples
+#Creating a Tuple containing the first 6 months of the year
+months = ("January", "February", "March", "April", "May", "June")
+print(months[2])
+print("")
+
+#Exercise03: Sets
+#Creating set of numbers including duplicates
+numbers = {1, 2, 3, 2, 4, 5, 3, 6, 1, 4, 6}
+print(numbers)
+print("")
+
+#Exerccise04:Dictionaries
+#Let's create a dictionary containing a student's information
+student = {
+    "name": "Samantha",
+    "age": 24,
+    "major": "Computer Science",
+    "skills": ["python", "JavaScript", "HTML", "CSS"]
+}
+print(student)
+print("")
+
+for key, value in student.items():
+    print(key, ":", value)
+print("")
+
+#Exercise05: Creating a list of dictionaries
+users = [
+    {"name": "Ava","age":  30 },
+    
+    { "name": "Amina", "age" : 25 }
+ ]
+
+for user in users:
+    print("Name:", user["name"], "Age:", user["age"])
+
+
+
+
+
+
+
+
