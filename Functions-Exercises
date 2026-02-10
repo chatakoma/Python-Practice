@@ -1,0 +1,50 @@
+import math
+
+#Exercise01: Greeting
+def hello(name):
+    print(f"Hello {name}, nice to meet you!")
+
+hello("Fanta")
+print("")
+
+#Exercise02: Area of a Circle
+def circle_area(radius):
+    return math.pi * radius * radius
+
+result = circle_area(5)
+print(f"Area of Circle is: {result}")
+print("")
+
+#Exercise03: Maximun of Three
+def Maximun(a,b,c):
+    if a >= b and a >=c:
+        return a
+    elif b >=a and b >= c:
+        return b
+    else:
+        return c
+        
+print(Maximun(8,100,999999))
+
+
+#Exercise04: Count Vowels ---> Writing a function to count the number of vowels in a string.
+
+def count_vowels(text):
+    count = 0
+    vowels = "aeiou"
+    
+    for letter in text:
+        if letter in vowels:
+            count += 1
+    return count
+print(count_vowels("Live a purposeful life"))
+print("")
+
+#Exercise05: Student Info Printer
+
+def student_info(name, age, major):
+    print(f"name: {name}")
+    print(f"age: {age}") 
+    print(f"major: {major}")
+
+student_info("Aicha", 15, "Computer Science")
