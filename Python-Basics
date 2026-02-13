@@ -1,0 +1,88 @@
+#Printing & Basic Syntax
+print("Hello, Python!") # No semicolons needed, remember that indentation matters
+
+#Variables. No need to specify types. python figures it out automatically
+name = "Aicha"
+age = 15
+is_student = True
+
+#Data Types
+#int--> 10, 
+#float ---> 3.14, 
+#str--->"Hello" 
+#bool--> True
+#list --> [1,2,3]
+#typle ---> (1,2,3)
+#set -----> {1,2,3}
+#dict -----> {"name": "Aicha", "age": 15}
+
+#Working with Strings
+name = "Aicha"
+print(name.upper())
+print(name.lower())
+print(f"Hello, {name}!")
+print("Aicha"[0])
+
+#Lists(Note: Very Important)--> Lists can grow and change. The're dynamic
+fruits = ["apple", "banana", "orange"]
+fruits.append("mango")
+print(fruits[0])
+print(len(fruits))
+
+#Dictionaries ---->Use keys and values
+student = {
+    "name": "Aicha",
+    "major": "CS",
+    "graduation": 2025
+}
+print(student["name"])
+student["GPA"] = 3.9
+print(student.items()) #prints all items in dictionaries
+
+#Operators
+#Arithmetic +, -, *, /, //, %, **  ---> // is floor division operator
+#Comparison ==, !=, <, > <=, >=
+#Logical and, or, not
+
+#Input From User
+name = input("Enter your name: ")
+print("Hello", name) # this adds a space automatically
+print("Hello" + name) #Does not add space unless you manually include it.
+
+#If/else conditions
+age = 20
+if age >= 18:
+    print("Adult")
+elif age == 17:
+    print("Almost an adult")
+else :
+    print("Child")
+    
+#For loops
+#for loop
+for i in range (5):
+    print(i)
+
+#While loop
+count = 0
+while count < 3:
+    print("Hello")
+    count += 1
+
+#Functions
+
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Aicha")
+
+#Basic Error Handling
+try :
+    x = 5/0
+except ZeroDivisonError:
+    print("You can't divide by zero!")
+
+
+
+
+
