@@ -1,0 +1,50 @@
+#importing a module
+import math
+print(math.sqrt(9))
+print("")
+
+#importing specific functions
+from math import sqrt
+print(sqrt(25))
+print("")
+
+#Creating my own module 
+#file01: Mymodule.py
+#def greet():
+#   print("Hello from Mymodule!")
+
+#file02: main.py
+#import Mymodule
+#Mymodule.greet()
+
+#File Handling
+#Writing to a file
+with open("data.txt", "w") as f:
+    f.write("Hello Aicha!")
+    
+#Reading from a file
+with open("data.txt", "r") as f:
+    content = f.read()
+    print(content)
+    
+#Virtual Environments(done in Bash(born again shell))
+#command line: an interface for typing commands directly to a computer's operating system.
+#a command is an instruction given by a user to a computer program or operating system to perform a specific task.
+#PowerShell is a task-based command-line interface, specifically designed for system admins and is based on the . Net Framework.
+#Bash is a command-line and scripting language for most Unix/Linux-based operating systems
+# creating a virtual environment ====> python -m venv myenv
+#Activating virtual environment(windows) =====> myenv\Scripts\activate
+#Activating virtual environment(Mac/Linux) =====> source myenv/bin/activate
+
+#Installing packages
+#pip install request  ===> install using Bash
+
+#Freeze packages =====> pip freeze > requirements.txt
+
+
+
+
+
+
+
+
