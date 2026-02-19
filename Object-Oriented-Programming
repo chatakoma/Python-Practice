@@ -1,0 +1,49 @@
+#Object-Oriented-Programming
+#Creating a class
+class Pet: 
+    def __init__(self, name, health):
+        self.name = name
+        self.health = health
+    
+    def take_damage(self, amount):
+        self.health -= amount
+
+#Using the class
+p = Pet("Fluffly", 100)
+p.take_damage(20)
+print(p.health)
+
+
+
+#Inheritance
+#Here's one class can extend another
+class Animal:
+    def speak(self):
+        print("Some sound")
+        
+class Dog(Animal):
+    def speak(self):
+        print("Woof!")
+    
+#Concept	Meaning
+#Class	    Blueprint
+#Object	    Instance created from class
+#__init__	Constructor (runs at creation)
+#self	    Refers to the object itself
+#Method   	Function inside class
+#Inheritance	One class extends another
+#An instance is a specific object created from a class
+#Class = blueprint
+#Instance = real thing made from the blueprint
+
+"""
+OOP Has 4 Main Pillars
+Pillar	Meaning
+Encapsulation	Bundling data + methods together
+Abstraction	    Hiding unnecessary details
+Inheritance	    One class extends another
+Polymorphism	Same method name, different behavior 
+
+"""
+
+
