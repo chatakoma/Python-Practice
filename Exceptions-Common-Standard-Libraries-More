@@ -1,0 +1,68 @@
+#Common Standard Libraries
+#for OS ===> working with files/folder
+import os
+print(os.listdir())
+
+#datetime ===> for dates and times
+from datetime import datetime
+print(datetime.now())
+
+#random ====> random numbers
+import random
+print(random.randint(1, 10))
+
+#JSon ===> working with JSON
+#JSON (JavaScript Object Notation) is a lightweight, human-readable text format for structuring and exchanging data, 
+#widely used for sending data between servers and web/mobile apps because it's simple, language-independent, and easily parsed by computers,
+#making it ideal for APIs, configuration files, and storing semi-structured data
+import json 
+data = {"name": "Aicha", "age": 24}
+json_str = json.dumps(data) #converts a python object into a JSON string
+
+
+#List Comprehensions(this is very powerful)
+#Here's a shortcut to create lists
+#here's the structure of a list comprehension ==> [ expression for item in iterable ]
+# or [ expression for item in iterable if condition ]
+squares = [x*x for x in range(10)]
+
+"""same as this ===> squares = []
+for x in range(10):
+    squares.append(x * x)
+"""
+
+#with conditions, it'd be
+evens = [x for x in range(20) if x % 2 == 0]
+""" 
+evens = []
+
+for x in range(20):
+    if x % 2 == 0:
+        evens.append(x)
+"""
+
+
+#Lambda Functions ==> they are tiny anyonymous functions
+#Structure of Lambda ===> ambda parameters: expression
+#Lambdas are mainly used when you need a small, temporary function.
+#Usually inside things like: sorted(), map(), filter()
+add = lambda a, b : a + b
+print(add(5, 3))
+"""
+same as writing 
+ def add(a, b):
+     return a + b
+"""
+
+#Working with External Libraries
+#Example requests(HTPP)
+#response = requests.get(URL) ===> Send an HTTP request and store the server’s reply.
+#response.status_code ===> Check if the request succeeded
+import requests
+
+response = requests.get("https://github.com/chatakoma")
+print(response.status_code)
+
+
+
+
