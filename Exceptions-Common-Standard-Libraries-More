@@ -1,3 +1,12 @@
+#Exceptions
+#Creating my own custom exception
+class TooLowError(Exception):
+    pass
+
+def check_value(x):
+    if x < 10:
+        raise TooLowError("Value too low!")
+
 #Common Standard Libraries
 #for OS ===> working with files/folder
 import os
@@ -62,7 +71,3 @@ import requests
 
 response = requests.get("https://github.com/chatakoma")
 print(response.status_code)
-
-
-
-
