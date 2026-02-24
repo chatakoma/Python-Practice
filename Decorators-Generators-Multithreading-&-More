@@ -1,0 +1,120 @@
+#Decorators ====> a decorator is a function that modifies another function
+#Decorators are used for authentication, logging, performance timing, and caching
+#Let's write a basic decorator
+def logger (func): 
+    def wrapper():
+        print("Function is running...")
+        func()
+    return wrapper
+
+@logger
+def greet():
+    print("Hello!")
+greet()
+
+
+#Generators ===> used when working with large files, streaming data and infinite sequences
+#Generators use yield instead of return to create a lazy iterator
+def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+
+for x in countdown(5):
+    print(x)
+    
+    
+#Iterators ====> a class becomes an iterator when it implements this:
+#__iter__()
+#__next__()
+
+class Counter:
+    def __init__(self, max):
+        self.max = max
+        self.current = 0
+    
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        if self.current < self.max:
+            self.current += 1
+            return self.current
+        raise StopIteration
+    
+#Context Managers(the with keyword)===> used for managing database connections, locking multithreaded code, timing code
+#file operations
+class MyContext:
+    def __enter__(self):
+        print("Entering...")
+        return self
+    
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Leaving...")
+    
+with MyContext():
+    print("Doing work...")
+    
+#Multithreading
+import threading
+def greet():
+    print("Hello!")
+    
+t = threading.Thread(target=greet)
+t.start()
+t.join()
+
+#Multiprocessing ===> this is used for CPU-heavy tasks like ML, simulations, massive computations
+from multiprocessing import Process
+
+def work():
+    print("working...")
+p = Process(target=work)
+p.start()
+p.join()
+
+#Async Programming(async/await Power!)
+#used for API calls, web servers,real-time live updates
+#Note that Async lets python handle thousands of tasks at once without blocking
+import asyncio
+
+async def task():
+    print("Running task...")
+    await asyncio.sleep(1)
+    print("Task done!")
+    
+asyncio.run(task())
+
+#Caching ==> used in data science and API-heavy apps
+from functools import lru_cache
+
+@lru_cache
+def slow_function(x):
+    return x*x
+    
+#Type Hints ===> used for cleaner code, avoiding bugs
+def add(a: int, b: int) -> int:
+    return a + b
+
+#Creating my own python Package
+"""
+myproject/
+    mypackage/
+        __init__.py
+        module1.py
+        module2.py
+    setup.py
+    
+example setup.py:
+from setuptools import setup
+
+setup(
+    name="mypackage",
+    version="0.1",
+    packages=['mypackage']
+)
+
+Then install locally:
+pip install .
+"""
+
