@@ -27,11 +27,26 @@ for title in soup.find_all("h1"):
 
 #Working with APIs(let's talk to any external service)
 #Here's an example using a public API:
+#APIs are used to build weather apps, job-search robots, social media tools, mobile apps(backend)
 import requests
 response = requests.get("https://api.github.com/users/octocat")
 data = response.json()
 
 print(data["name"])
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+
 
 
 
