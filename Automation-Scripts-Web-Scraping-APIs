@@ -1,0 +1,48 @@
+#Automation Scripts
+#here's things that can be automated: renaming hundreds of files, moving backups,
+#sending emails, cleaning folders, scheduling scripts
+import os
+
+folder = "C:/Users/Aicha/Desktop/files"
+
+for i, filename in enumerate(os.listdir(folder)):
+    old = os.path.join(folder, filename)
+    new = os.path.join(folder, f"file_{i}.txt")
+    os.rename(old, new)
+ 
+#Web Scraping ==> used for extracting any data from the web!
+#job postings, product prices, university events, weather and news can be scraped
+# install ===> pip install requests beautifulsoup4
+#Scrape:
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://example.com"
+page = requests.get(url)
+soup = BeautifulSoup(page.text, "html.parser")
+
+for title in soup.find_all("h1"):
+    print(title.text)
+    
+
+#Working with APIs(let's talk to any external service)
+#Here's an example using a public API:
+import requests
+response = requests.get("https://api.github.com/users/octocat")
+data = response.json()
+
+print(data["name"])
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+
